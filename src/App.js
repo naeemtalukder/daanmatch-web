@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import AudioRecoders from './pages/AudioRecoders';
+import DataConnection from './pages/DataConnection';
+import Login from './pages/Login';
+import Registration from './pages/Registration';
+import SlpashScreen from './pages/SlpashScreen';
+
+
+const BgPrimary = "#000033";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundColor: BgPrimary, width: '100%', height: '52em'}}>
+
+       {/* View each Page by uncommenting it */}
+
+      <SlpashScreen/>
+      {/* <Login/>
+      <Registration/>
+      <DataConnection></DataConnection>
+      <AudioRecoders/> */}
     </div>
   );
 }
